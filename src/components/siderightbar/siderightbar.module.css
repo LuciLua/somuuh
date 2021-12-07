@@ -14,6 +14,8 @@
     padding: 5px 5px 5px 0; /*all sides, except at left*/
 
     height: calc(100vh - 120px); /*120px of bottombar*/
+
+    overflow: hidden;
 }
 
 
@@ -21,10 +23,45 @@
         height: 100%;
         max-width: 300px;
         min-width: 250px;
+
+        overflow-y: scroll;
     }
 
+.topList::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 30px;
+    background-color: rgba(75, 75, 75, 0);
+}
+.topList::-webkit-scrollbar-thumb{
+    width: 5px;
+    border-radius: 30px;
+    background-color: rgba(28, 28, 28, 0.508);
+}
+.topList::-webkit-scrollbar-button{
+    width: 5px;
+    border-radius: 30px;
+    background-color: transparent;
+}
 
 .itemTopList{
-    border: 1px solid red;
+    margin: 20px 0;
+    font-family: 'Lexend', sans-serif;
+}
+.itemTopListSelect{
+    border: 2px solid rgba(0, 123, 255, 0.796);
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.13);
+}
+
+.itemTopList span:nth-child(1){
+    font-size: 13px;
+    color: rgb(163, 163, 163);
+    display: block;
+}
+
+.itemTopList span:nth-child(2){
+    font-size: 15px;
+    color: rgb(65, 65, 65);
+    display: block;
+    font-weight: 900;
 }
 
