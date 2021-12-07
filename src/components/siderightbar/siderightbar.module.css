@@ -1,0 +1,30 @@
+.boxWhite{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.076);
+    background: rgb(248, 248, 248);
+    border-radius: 8px;
+
+    padding: 20px;
+}
+
+.containerSideRightbar{    
+    max-width: 300px;
+    min-width: 250px;
+    width: 100%;
+
+    padding: 5px 5px 5px 0; /*all sides, except at left*/
+
+    height: calc(100vh - 120px); /*120px of bottombar*/
+}
+
+
+.topList{
+        height: 100%;
+        max-width: 300px;
+        min-width: 250px;
+    }
+
+
+.itemTopList{
+    border: 1px solid red;
+}
+
