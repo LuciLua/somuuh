@@ -1,4 +1,3 @@
-import { FireIcon } from '@heroicons/react/solid'
 import styles from './siderightbar.module.css'
 import classNames from 'classnames'
 

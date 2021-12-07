@@ -1,4 +1,3 @@
-import { FireIcon } from '@heroicons/react/solid'
 import { MusicNoteIcon, UserGroupIcon } from '@heroicons/react/outline'
 import styles from './sidebar.module.css'
 import classNames from 'classnames'
@@ -11,21 +10,21 @@ function Sidebar() {
                     <li><span>Grupos</span>
                         <ul className={classNames(styles.menu, styles.menuGrupos)}>
                             <li className={classNames(styles.menuItem)}>
-                                <UserGroupIcon className={styles.icoItemMenu}/>
-                                <a href='/'>
-                                !osu group!
+                                <UserGroupIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    !osu group!
                                 </a>
                             </li>
                             <li className={classNames(styles.menuItem)}>
-                            <UserGroupIcon className={styles.icoItemMenu}/>
-                                <a href='/'>
-                                Nostalgia
+                                <UserGroupIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Nostalgia
                                 </a>
                             </li>
                             <li className={classNames(styles.menuItem)}>
-                            <UserGroupIcon className={styles.icoItemMenu}/>
-                                <a href='/'>
-                                Amo passas
+                                <UserGroupIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Amo passas
                                 </a>
                             </li>
                         </ul>
@@ -33,21 +32,21 @@ function Sidebar() {
                     <li> <span>playlists</span>
                         <ul className={classNames(styles.menu, styles.menuPlaylists)}>
                             <li className={classNames(styles.menuItem)}>
-                            <MusicNoteIcon className={styles.icoItemMenu}/>
-                                <a href='/'>
-                                Adele
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Adele
                                 </a>
                             </li>
                             <li className={classNames(styles.menuItem)}>
-                            <MusicNoteIcon className={styles.icoItemMenu}/>
-                                <a href='/'>
-                                Aurora
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Aurora
                                 </a>
                             </li>
                             <li className={classNames(styles.menuItem)}>
-                            <MusicNoteIcon className={styles.icoItemMenu}/>
-                                <a href='/'>
-                                Sertanejo
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Sertanejo
                                 </a>
                             </li>
                         </ul>

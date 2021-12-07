@@ -1,10 +1,10 @@
 import styles from './bottombar.module.css'
 
-function Bottombar(){
-    return(
+function Bottombar() {
+    return (
         <>
-         <div className={styles.containerBottombar}>
-         </div>
+            <div className={styles.containerBottombar}>
+            </div>
         </>
     )
 }

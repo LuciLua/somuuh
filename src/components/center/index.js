@@ -1,5 +1,6 @@
 import styles from './center.module.css'
 import classNames from 'classnames'
+import Image from 'next/image'
 
 function Center() {
     return (
@@ -8,46 +9,130 @@ function Center() {
                 <div className={styles.social}>
                     <div className={classNames(styles.friends, styles.boxWhite)}>
                         <div className={styles.friend}>
-                            <img src='./a.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/a.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./b.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/b.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./c.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/c.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./d.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/d.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./e.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/e.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./f.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/f.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./g.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/g.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./a.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/a.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./b.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/b.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./c.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/c.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./d.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/d.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./e.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/e.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./f.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/f.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                         <div className={styles.friend}>
-                            <img src='./g.jpg'></img>
+                            <Image
+                                alt='imagem de um amigo'
+                                src='/g.jpg'
+                                width='200'
+                                height='200'
+                                layout='responsive'
+                            />
                         </div>
                     </div>
                     <div className={classNames(styles.posts, styles.boxWhite)}>

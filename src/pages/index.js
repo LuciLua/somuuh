@@ -6,7 +6,7 @@ function Home(props) {
       <h1>Hello, Home!</h1>
       <ul>
         {props.nomes.map((n) => (
-          <li>{n}</li>
+          <li key={n}>{n}</li>
         ))}
       </ul>
     </>

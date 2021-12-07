@@ -1,5 +1,5 @@
 import Sidebar from "../components/sidebar";
-import SideRightbar from "../components/sideRightbar";
+import SideRightbar from "../components/siderightbar";
 import Center from "../components/center";
 import Bottombar from "../components/bottombar";
 
