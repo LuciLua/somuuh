@@ -1,85 +1,209 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend&family=Roboto:wght@300;400;500&display=swap");
 
-.containerSidebar{
-    max-width: 300px;
-    min-width: 250px;
-    width: 100%;
+.containerSidebar {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
 
-    height: calc(100vh - 120px); /*120px of bottombar*/
-    background-color: rgb(248, 248, 248);
+  height: calc(100vh - 120px); /*120px of bottombar*/
+  position: relative;
 
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.138);
-}
+  .boxWhite {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.076);
+    background: rgb(248, 248, 248);
+    border-radius: 8px;
 
-.menus{
     padding: 30px;
+  }
+
+  .menus {
+    position: relative;
+
     width: 100%;
     height: 100%;
 
     display: flex;
     flex-direction: column;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+
+    list-style: none;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      border-radius: 30px;
+      background-color: rgba(75, 75, 75, 0);
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 5px;
+      border-radius: 30px;
+      background-color: rgba(28, 28, 28, 0.508);
+    }
+    &::-webkit-scrollbar-button {
+      width: 5px;
+      border-radius: 30px;
+      background-color: transparent;
+    }
+
+    li {
+      & > p {
+        font-weight: 700;
+        color: rgb(33, 33, 33);
+      }
+    }
+
+    .menu {
+      margin-bottom: 20px;
+      padding-left: 20px;
+
+      li {
+        margin-bottom: 10px;
+        position: relative;
+        display: flex;
+
+        transition: 0.3s;
+
+        a {
+          text-decoration: none;
+          color: rgba(51, 51, 51, 0.556);
+
+          &:hover {
+            color: rgb(17, 17, 17);
+          }
+        }
+
+        &:first-of-type {
+          margin-top: 10px;
+        }
+
+        &:hover {
+            transition: 0.3s;
+          .icoItemMenu {
+            color: rgb(17, 17, 17);
+          }
+        }
+
+        & > .icoItemMenu {
+          width: 20px;
+          height: 20px;
+
+          margin-right: 10px;
+          color: rgb(163, 163, 163);
+        }
+
+        &:first-of-type:before,
+        &:last-of-type:before,
+        &::before {
+          content: "";
+          position: absolute;
+
+          width: 2px;
+          height: 40px;
+
+          background-color: rgb(228, 228, 228);
+
+          bottom: 0;
+          left: -15px;
+        }
+
+        &:first-of-type:before {
+          height: 15px;
+          bottom: 0;
+        }
+
+        &:last-of-type:before {
+          bottom: 5px;
+        }
+      }
+    }
+  }
 }
 
-.menus li > span {
-    font-weight: 700;
-    color: rgb(33, 33, 33);
-}
+@media only screen and (max-width: 1100px) {
+  .containerSidebar {
+    max-width: 80px;
+    min-width: 80px;
+    width: 80px;
+    padding: 5px 0 5px 5px; // all, except at right
+    .menus {
+      display: flex;
+      align-items: center;
+      padding: 5px;
 
-.menus .menu{
-    margin-bottom: 20px;
-    padding-left: 20px;
-}
+      & > li {
+        width: 100%;
+        height: fit-content;
 
-.menus .menu li:first-of-type{
-    margin-top: 10px;
-}
-.menus .menu li{
-    margin-bottom: 10px;
-    position: relative;
-    display: flex; 
-}
+        & > p {
+          color: transparent;
+          margin: 1px;
+          user-select: none;
 
-.menus .menu li > .icoItemMenu{
-    width: 20px;
-    height: 20px;
+          width: 20px;
+          margin: 10px auto;
 
-    margin-right: 10px;
-    color: rgb(163, 163, 163);
-}
+          padding: 5px 19px 5px 10px;
 
-.menus .menu li:first-of-type:before,
-.menus .menu li:last-of-type:before,
-.menus .menu li::before{
-    content: '';
-    position: absolute;
+          background-color: rgb(102, 69, 191);
+          border-radius: 60%;
+          overflow: hidden;
+        }
 
-    width: 2px;
-    height: 40px;
+        &::first-letter {
+          display: flex;
+          color: rgb(255, 255, 255);
+        }
+      }
 
-    background-color: rgb(208, 208, 208);
+      .menu {
+        overflow: hidden;
 
-    bottom: 0;
-    left: -15px;
-}
+        width: 100%;
 
-.menus .menu li:first-of-type:before{
-    height: 15px;
-    bottom: 0;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
 
-.menus .menu li:last-of-type:before{
-    bottom: 5px;
-}
+        & > li {
+          background-color: #ddd;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
 
-.menus .menu li a{
-    text-decoration: none;
-    color: rgba(51, 51, 51, 0.556);
-}
-.menus .menu li:hover a{
-    color: rgb(17, 17, 17);
-}
-.menus .menu li:hover .icoItemMenu{
-    color: rgb(17, 17, 17);
+          cursor: pointer;
+
+          &:hover{
+            background-color: rgb(29, 29, 29);
+
+            & > .icoItemMenu{
+                color: #fff;
+            }
+          }
+
+
+          &:first-of-type:before,
+          &:last-of-type:before,
+          &::before {
+            display: none;
+          }
+          & > .icoItemMenu {
+            position: absolute;
+            right: 5px;
+          }
+          & > a {
+            user-select: none;
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

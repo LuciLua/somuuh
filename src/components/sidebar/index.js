@@ -6,8 +6,8 @@ function Sidebar() {
     return (
         <>
             <div className={styles.containerSidebar}>
-                <ul className={classNames(styles.menus)}>
-                    <li><span>Grupos</span>
+                <ul className={classNames(styles.menus, styles.boxWhite)}>
+                    <li><p>Grupos</p>
                         <ul className={classNames(styles.menu, styles.menuGrupos)}>
                             <li className={classNames(styles.menuItem)}>
                                 <UserGroupIcon className={styles.icoItemMenu} />
@@ -29,7 +29,7 @@ function Sidebar() {
                             </li>
                         </ul>
                     </li>
-                    <li> <span>playlists</span>
+                    <li><p>Playlists</p>
                         <ul className={classNames(styles.menu, styles.menuPlaylists)}>
                             <li className={classNames(styles.menuItem)}>
                                 <MusicNoteIcon className={styles.icoItemMenu} />

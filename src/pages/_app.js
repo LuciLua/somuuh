@@ -9,7 +9,7 @@ function App({ Component, pageProps }) {
   return (
     <div className="wrap">
       <main>
-        <div className="bars">
+        <div className="bars barleft">
           <Sidebar />
         </div>
         <div className="centerAndRightBar">
