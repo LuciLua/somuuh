@@ -1,4 +1,4 @@
-import styles from './center.module.css'
+import styles from './center.module.scss'
 import classNames from 'classnames'
 import Image from 'next/image'
 

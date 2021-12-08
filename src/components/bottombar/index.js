@@ -1,4 +1,4 @@
-import styles from './bottombar.module.css'
+import styles from './bottombar.module.scss'
 
 function Bottombar() {
     return (

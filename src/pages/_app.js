@@ -3,7 +3,7 @@ import SideRightbar from "../components/siderightbar";
 import Center from "../components/center";
 import Bottombar from "../components/bottombar";
 
-import "../styles/globals.css";
+import "../styles/globals.scss";
 
 function App({ Component, pageProps }) {
   return (

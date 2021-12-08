@@ -1,5 +1,5 @@
 import { MusicNoteIcon, UserGroupIcon } from '@heroicons/react/outline'
-import styles from './sidebar.module.css'
+import styles from './sidebar.module.scss'
 import classNames from 'classnames'
 
 function Sidebar() {

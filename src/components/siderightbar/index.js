@@ -1,4 +1,4 @@
-import styles from './siderightbar.module.css'
+import styles from './siderightbar.module.scss'
 import classNames from 'classnames'
 
 function SideRightbar() {
