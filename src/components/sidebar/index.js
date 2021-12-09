@@ -49,6 +49,78 @@ function Sidebar() {
                                     Sertanejo
                                 </a>
                             </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    POP
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Lady Gaga
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Engenheiros do Hawaii
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Funk
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    POP
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Lady Gaga
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Engenheiros do Hawaii
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Funk
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    POP
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Lady Gaga
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Engenheiros do Hawaii
+                                </a>
+                            </li>
+                            <li className={classNames(styles.menuItem)}>
+                                <MusicNoteIcon className={styles.icoItemMenu} />
+                                <a href='./'>
+                                    Funk
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>

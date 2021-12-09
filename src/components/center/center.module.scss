@@ -137,6 +137,12 @@
   .containerCenter {
     .social {
       width: calc(100vw - 80px);
+
+      .friends{
+        &::-webkit-scrollbar {
+          height: 0px;
+        }
+      }
     }
   }
 }
