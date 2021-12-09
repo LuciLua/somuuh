@@ -1,14 +1,9 @@
 import React from "react";
 
 function Home(props) {
+  const { nomes } = props
   return (
     <>
-      <h1>Hello, Home!</h1>
-      <ul>
-        {props.nomes.map((n) => (
-          <li key={n}>{n}</li>
-        ))}
-      </ul>
     </>
   );
 }

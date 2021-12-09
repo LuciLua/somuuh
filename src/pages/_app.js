@@ -21,10 +21,10 @@ function App({ Component, pageProps }) {
       </main>
       <aside>
         <Bottombar />
-        {/* <Component {...pageProps} /> */}
+        <Component {...pageProps} />
       </aside>
     </div>
   );
 }
 
-export default App;
+export default App
