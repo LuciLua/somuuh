@@ -2,8 +2,8 @@
 
 **A social network for music lovers, still in development**
 
-<img src="https://img.shields.io/apm/l/react?style=flat-square"><img src="https://img.shields.io/github/stars/LuciLua/socialMusic?style=flat-square">
-<img src="https://img.shields.io/github/last-commit/LuciLua/socialMusic?style=flat-square"><img src="https://img.shields.io/github/commit-activity/w/LuciLua/socialMusic?style=flat-square">
+<img src="https://img.shields.io/apm/l/react?style=flat-square"> <img src="https://img.shields.io/github/stars/LuciLua/socialMusic?style=flat-square">
+<img src="https://img.shields.io/github/last-commit/LuciLua/socialMusic?style=flat-square"> <img src="https://img.shields.io/github/commit-activity/w/LuciLua/socialMusic?style=flat-square">
 
 
 ## Tecnologias usadas
