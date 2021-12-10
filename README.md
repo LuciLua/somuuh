@@ -1,6 +1,6 @@
 ## Social Music
 
-Uma rede social para quem gosta de música, ainda em desenvolvimento.
+**A social network for music lovers, still in development**
 
 <img src="https://img.shields.io/apm/l/react?style=flat-square"><img src="https://img.shields.io/github/stars/LuciLua/socialMusic?style=flat-square">
 <img src="https://img.shields.io/github/last-commit/LuciLua/socialMusic?style=flat-square"><img src="https://img.shields.io/github/commit-activity/w/LuciLua/socialMusic?style=flat-square">
@@ -14,11 +14,13 @@ Uma rede social para quem gosta de música, ainda em desenvolvimento.
 
 ## How to start
 
-## Requirement
+If you want to learn a little about how this application is being built, as well as the technologies used, take a look at this topic, please pay attention to the MIT license and its limitations, good studies! Feel free to mark insues in this repository too
+
+### Requirement
 
 > node package manager (NPM or YARN)
 
-## Now are you ready to start
+### Now are you ready to start
 
 > clone the repository
 <code> git clone https://github.com/LuciLua/socialMusic.git</code>
@@ -32,7 +34,7 @@ Uma rede social para quem gosta de música, ainda em desenvolvimento.
 > start the development server (using YARN)
 <code> yarn dev </code>
 
-## Build 
+### Build 
 
 > to make a build (using YARN)
 <code> yarn build </code>
