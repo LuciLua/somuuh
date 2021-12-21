@@ -1,184 +1,39 @@
 import styles from './center.module.scss'
 import classNames from 'classnames'
 import Image from 'next/image'
+import SocialBar from './socialbar';
 
-function Center() {
+export async function getStaticProps(ctx) {
+
+    const users = [
+      {
+        id: 1,
+        name: "Luci"
+      },
+      {
+        id: 2,
+        name: "Luana"
+      }
+    ]
+  
+    return {
+      props: {
+        users
+      }
+    };
+  }
+
+function Center(props) {
+
+    const { users } = props
+    console.log(users)
+
     return (
         <>
             <div className={styles.containerCenter}>
                 <div className={styles.social}>
-                    <div className={classNames(styles.friends, styles.boxWhite)}>
-                        <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/a.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/b.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/c.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/d.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/e.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/f.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/g.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/a.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/b.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/c.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/d.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/e.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/f.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                       <div className={styles.friend}>
-                            <label>Name</label>
-                            <div className={styles.imgFriend}>
-                                <Image
-                                    alt='imagem de um amigo'
-                                    src='/g.jpg'
-                                    width='200'
-                                    height='200'
-                                    layout='responsive'
-                                />
-                            </div>
-                        </div>
-                    </div>
+                    <SocialBar/>
                     <div className={classNames(styles.posts, styles.boxWhite)}>
-
                     </div>
                 </div>
             </div>

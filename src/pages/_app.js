@@ -7,23 +7,25 @@ import "../styles/globals.scss";
 
 function App({ Component, pageProps }) {
   return (
-    <div className="wrap">
-      <main>
-        <div className="bars barleft">
-          <Sidebar />
-        </div>
-        <div className="centerAndRightBar">
-          <Center />
-          <div className="bars barRight">
-            <SideRightbar />
-          </div>
-        </div>
-      </main>
-      <aside>
-        <Bottombar />
+     <div className="wrap">
+       {/* <main>
+         <div className="bars barleft">
+           <Sidebar />
+         </div>
+         <div className="centerAndRightBar">
+           <Center />
+           <div className="bars barRight">
+             <SideRightbar />
+           </div>
+         </div>
+       </main>
+       <aside>
+         <Bottombar /> */}
         <Component {...pageProps} />
-      </aside>
-    </div>
+
+       {/* </aside> */}
+
+     </div>
   );
 }
 
