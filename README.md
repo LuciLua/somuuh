@@ -1,9 +1,10 @@
-## 🎶 Social Music 🎶
+# <p align="center">🎶 Social Music 🎶</p>
 
-**A social network for music lovers, still in development**
+<p align="center">A social network for music lovers, still in development</p>
 
+<h1 align="center">
 <img src="https://img.shields.io/apm/l/react?style=flat-square"> <img src="https://img.shields.io/github/stars/LuciLua/socialMusic?style=flat-square">
-<img src="https://img.shields.io/github/last-commit/LuciLua/socialMusic?style=flat-square"> <img src="https://img.shields.io/github/commit-activity/w/LuciLua/socialMusic?style=flat-square">
+<img src="https://img.shields.io/github/last-commit/LuciLua/socialMusic?style=flat-square"> <img src="https://img.shields.io/github/commit-activity/w/LuciLua/socialMusic?style=flat-square"> <img src="https://img.shields.io/github/languages/code-size/LuciLua/socialMusic">
 
 
 ## 🛠 Technologies used
@@ -20,27 +21,41 @@ If you want to learn a little about how this application is being built, as well
 
 > node package manager (NPM or YARN)
 
+> Git bash (optional, you can download the code directly from GitHub at 'code' > 'Download zip')
+
 ### ✨ Now are you ready to start 
 
 > clone the repository
-<code> git clone https://github.com/LuciLua/socialMusic.git</code>
+```bash 
+git clone https://github.com/LuciLua/socialMusic.git
+```
 
 > open project folder
-<code> cd ./socialMusic</code>
+```bash
+cd ./socialMusic
+```
 
 > install all packages using npm or yarn manager (using YARN)
-<code> yarn </code>
+```bash
+yarn
+```
 
 > start the development server (using YARN)
-<code> yarn dev </code>
+```bash
+yarn dev
+```
 
 ### 🏗 Build 
 
 > to make a build (using YARN)
-<code> yarn build </code>
+```bash
+yarn build
+```
 
 > to start the server in production-ready mode (using YARN)
-<code> yarn start </code>
+```bash
+yarn start
+```
 
 
 ## 🖼 Preview
