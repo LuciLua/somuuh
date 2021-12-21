@@ -1,0 +1,19 @@
+.boxWhite {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.076);
+    background: rgb(248, 248, 248);
+    border-radius: 8px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Lexend', sans-serif;
+  }
+
+  .posts {
+    height: calc(100vh - 220px); /*90 friends, 120 bottombar = 210px */
+    
+}

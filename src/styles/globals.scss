@@ -29,15 +29,61 @@ main{
   width: 250px;
 }
 
-@media only screen and (max-width: 1265px) { 
+
+  .containerCenter {
+    height: calc(100vh - 120px);
+    padding: 5px;
+  
+    width: 100%;
+  
+    display: flex;
+    flex-direction: row;
+  
+    align-items: center;
+    justify-content: center;
+  
+    .social {
+      width: 100%;
+      max-width: 750px;
+  
+      height: 100%;
+  
+      display: flex;
+      flex-direction: column;
+  
+      position: relative;
+  
+      
+    }
+  }
+  
+  @media only screen and (max-width: 1265px) { 
     .barRight{
         display: none;
+    }
+    .containerCenter {
+      .social {
+        width: calc(100vw - 80px);
+  
+        .friends{
+          &::-webkit-scrollbar {
+            height: 0px;
+          }
+        }
+      }
     }
     
   }
 
-@media only screen and (max-width: 1100px) { 
-    .bars {
-      width: 80px;
+  @media only screen and (max-width: 1100px) {
+    .containerCenter {
+      .social {
+        width: calc(
+          100vw - 90px
+        ); // 90px (leftsidebar|80px + paddings left|5px and right|5px)
+      }
     }
-  }
+      .bars {
+        width: 80px;
+      }
+    }

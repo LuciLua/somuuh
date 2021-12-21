@@ -1,6 +1,7 @@
 import { MusicNoteIcon, UserGroupIcon } from '@heroicons/react/outline'
 import styles from './sidebar.module.scss'
 import classNames from 'classnames'
+import Link from 'next/link'
 
 function Sidebar() {
     return (
@@ -11,9 +12,11 @@ function Sidebar() {
                         <ul className={classNames(styles.menu, styles.menuGrupos)}>
                             <li className={classNames(styles.menuItem)}>
                                 <UserGroupIcon className={styles.icoItemMenu} />
-                                <a href='./'>
+                                <Link href="/osu-group">
+                                <a>
                                     !osu group!
                                 </a>
+                                </Link>
                             </li>
                             <li className={classNames(styles.menuItem)}>
                                 <UserGroupIcon className={styles.icoItemMenu} />

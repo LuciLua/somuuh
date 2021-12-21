@@ -1,0 +1,34 @@
+.boxWhite {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.076);
+    background: rgb(248, 248, 248);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+
+
+    font-family: 'Lexend', sans-serif;
+
+    padding: 30px;
+
+    text-align: center;
+  }
+
+  .notFound {
+    height: calc(100vh - 220px); /*90 friends, 120 bottombar = 210px */
+  
+    a{
+      background-color: #222;
+      border-radius: 30px;
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 15px;
+
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  }
+

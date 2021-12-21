@@ -1,32 +1,13 @@
 import React from "react";
-import Sidebar from "../components/sidebar";
-import SideRightbar from "../components/siderightbar";
-import Center from "../components/center";
-import Bottombar from "../components/bottombar";
+import Posts from "../components/center/posts";
 
 function Home() {
 
   return (
     <>
-      <div className="wrap">
-        <main>
-          <div className="bars barleft">
-            <Sidebar />
-          </div>
-          <div className="centerAndRightBar">
-            <Center />
-            <div className="bars barRight">
-              <SideRightbar />
-            </div>
-          </div>
-        </main>
-        <aside>
-          <Bottombar />
-        </aside>
-      </div>
+      <Posts/>  
     </>
   );
 }
-
 
 export default Home;
