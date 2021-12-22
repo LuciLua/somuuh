@@ -14,7 +14,9 @@ function Sidebar() {
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <UserGroupIcon className={styles.icoItemMenu} />
-                                        !osu group dos melhorres do mudno!
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
                                     </li>
                                 </a>
                             </Link>
@@ -22,7 +24,9 @@ function Sidebar() {
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <UserGroupIcon className={styles.icoItemMenu} />
-                                        !osu group!
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
                                     </li>
                                 </a>
                             </Link>
@@ -30,7 +34,9 @@ function Sidebar() {
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <UserGroupIcon className={styles.icoItemMenu} />
-                                        !osu group!
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
                                     </li>
                                 </a>
                             </Link>
@@ -42,7 +48,9 @@ function Sidebar() {
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
-                                        !osu group!
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
                                     </li>
                                 </a>
                             </Link>
@@ -50,7 +58,9 @@ function Sidebar() {
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
-                                        !osu group!
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
                                     </li>
                                 </a>
                             </Link>
@@ -58,35 +68,79 @@ function Sidebar() {
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
-                                        !osu group!
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
                                     </li>
                                 </a>
-                            </Link>                            <Link href="/osu-group">
+                            </Link>                            
+                            <Link href="/osu-group">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
-                                        !osu group!
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
                                     </li>
                                 </a>
-                            </Link>                            <Link href="/osu-group">
+                            </Link>                            
+                            <Link href="/osu-group">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
-                                        !osu group!
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
                                     </li>
                                 </a>
-                            </Link>                            <Link href="/osu-group">
+                            </Link>                            
+                            <Link href="/osu-group">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
-                                        !osu group!
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
                                     </li>
                                 </a>
-                            </Link>                            <Link href="/osu-group">
+                            </Link>                            
+                            <Link href="/osu-group">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
-                                        !osu group!
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
+                                    </li>
+                                </a>
+                            </Link>
+                            <Link href="/osu-group">
+                                <a>
+                                    <li className={classNames(styles.menuItem)}>
+                                        <MusicNoteIcon className={styles.icoItemMenu} />
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
+                                    </li>
+                                </a>
+                            </Link>
+                            <Link href="/osu-group">
+                                <a>
+                                    <li className={classNames(styles.menuItem)}>
+                                        <MusicNoteIcon className={styles.icoItemMenu} />
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
+                                    </li>
+                                </a>
+                            </Link>
+                            <Link href="/osu-group">
+                                <a>
+                                    <li className={classNames(styles.menuItem)}>
+                                        <MusicNoteIcon className={styles.icoItemMenu} />
+                                        <span>
+                                            !osu group dos melhorres do mudno!
+                                        </span>
                                     </li>
                                 </a>
                             </Link>
