@@ -8,34 +8,37 @@ function Sidebar() {
         <>
             <div className={styles.containerSidebar}>
                 <ul className={classNames(styles.menus, styles.boxWhite)}>
+                    <div className={styles.logo}>
+                        <span>Social Music</span>
+                    </div>
                     <li><p>Grupos</p>
                         <ul className={classNames(styles.menu, styles.menuGrupos)}>
-                            <Link href="/osu-group">
+                            <Link href="osu-group">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <UserGroupIcon className={styles.icoItemMenu} />
                                         <span>
-                                            !osu group dos melhorres do mudno!
+                                            !osu group dos melhorres do mundo!
                                         </span>
                                     </li>
                                 </a>
                             </Link>
-                            <Link href="/osu-group">
+                            <Link href="nostalgia">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <UserGroupIcon className={styles.icoItemMenu} />
                                         <span>
-                                            !osu group dos melhorres do mudno!
+                                            nostalgia
                                         </span>
                                     </li>
                                 </a>
                             </Link>
-                            <Link href="/osu-group">
+                            <Link href="crazy-and-lovers">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <UserGroupIcon className={styles.icoItemMenu} />
                                         <span>
-                                            !osu group dos melhorres do mudno!
+                                            Crazy and Lovers
                                         </span>
                                     </li>
                                 </a>
@@ -44,102 +47,102 @@ function Sidebar() {
                     </li>
                     <li><p>Playlists</p>
                         <ul className={classNames(styles.menu, styles.menuPlaylists)}>
-                            <Link href="/osu-group">
+                            <Link href="sertanejo">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
                                         <span>
-                                            !osu group dos melhorres do mudno!
+                                            Sertanejo
                                         </span>
                                     </li>
                                 </a>
                             </Link>
-                            <Link href="/osu-group">
+                            <Link href="aurora">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
                                         <span>
-                                            !osu group dos melhorres do mudno!
+                                            Aurora
                                         </span>
                                     </li>
                                 </a>
                             </Link>
-                            <Link href="/osu-group">
+                            <Link href="joao-neto-e-frederico">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
                                         <span>
-                                            !osu group dos melhorres do mudno!
-                                        </span>
-                                    </li>
-                                </a>
-                            </Link>                            
-                            <Link href="/osu-group">
-                                <a>
-                                    <li className={classNames(styles.menuItem)}>
-                                        <MusicNoteIcon className={styles.icoItemMenu} />
-                                        <span>
-                                            !osu group dos melhorres do mudno!
-                                        </span>
-                                    </li>
-                                </a>
-                            </Link>                            
-                            <Link href="/osu-group">
-                                <a>
-                                    <li className={classNames(styles.menuItem)}>
-                                        <MusicNoteIcon className={styles.icoItemMenu} />
-                                        <span>
-                                            !osu group dos melhorres do mudno!
-                                        </span>
-                                    </li>
-                                </a>
-                            </Link>                            
-                            <Link href="/osu-group">
-                                <a>
-                                    <li className={classNames(styles.menuItem)}>
-                                        <MusicNoteIcon className={styles.icoItemMenu} />
-                                        <span>
-                                            !osu group dos melhorres do mudno!
-                                        </span>
-                                    </li>
-                                </a>
-                            </Link>                            
-                            <Link href="/osu-group">
-                                <a>
-                                    <li className={classNames(styles.menuItem)}>
-                                        <MusicNoteIcon className={styles.icoItemMenu} />
-                                        <span>
-                                            !osu group dos melhorres do mudno!
+                                            Joao Neto e Frederico
                                         </span>
                                     </li>
                                 </a>
                             </Link>
-                            <Link href="/osu-group">
+                            <Link href="passarinhos-cantando">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
                                         <span>
-                                            !osu group dos melhorres do mudno!
+                                            Passarinhos cantando
                                         </span>
                                     </li>
                                 </a>
                             </Link>
-                            <Link href="/osu-group">
+                            <Link href="amigos-do-forro">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
                                         <span>
-                                            !osu group dos melhorres do mudno!
+                                            amigos do forró
                                         </span>
                                     </li>
                                 </a>
                             </Link>
-                            <Link href="/osu-group">
+                            <Link href="calcinha-preta">
                                 <a>
                                     <li className={classNames(styles.menuItem)}>
                                         <MusicNoteIcon className={styles.icoItemMenu} />
                                         <span>
-                                            !osu group dos melhorres do mudno!
+                                            Calcinha preta
+                                        </span>
+                                    </li>
+                                </a>
+                            </Link>
+                            <Link href="los-hermanos">
+                                <a>
+                                    <li className={classNames(styles.menuItem)}>
+                                        <MusicNoteIcon className={styles.icoItemMenu} />
+                                        <span>
+                                            Los Hermanos
+                                        </span>
+                                    </li>
+                                </a>
+                            </Link>
+                            <Link href="rock">
+                                <a>
+                                    <li className={classNames(styles.menuItem)}>
+                                        <MusicNoteIcon className={styles.icoItemMenu} />
+                                        <span>
+                                            Rock
+                                        </span>
+                                    </li>
+                                </a>
+                            </Link>
+                            <Link href="funk">
+                                <a>
+                                    <li className={classNames(styles.menuItem)}>
+                                        <MusicNoteIcon className={styles.icoItemMenu} />
+                                        <span>
+                                            Funk
+                                        </span>
+                                    </li>
+                                </a>
+                            </Link>
+                            <Link href="latidos-da-lanny">
+                                <a>
+                                    <li className={classNames(styles.menuItem)}>
+                                        <MusicNoteIcon className={styles.icoItemMenu} />
+                                        <span>
+                                            latidos da Lanny
                                         </span>
                                     </li>
                                 </a>
