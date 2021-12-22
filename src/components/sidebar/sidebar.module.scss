@@ -35,57 +35,60 @@
     &::-webkit-scrollbar {
       width: 5px;
       border-radius: 30px;
-      background-color: rgba(75, 75, 75, 0);
+      background-color: transparent;
     }
     &::-webkit-scrollbar-thumb {
       width: 5px;
       border-radius: 30px;
-      background-color: rgba(28, 28, 28, 0.508);
+      background-color: rgba(28, 28, 28, 0.233);
     }
     &::-webkit-scrollbar-button {
-      width: 5px;
+      height: 0;
       border-radius: 30px;
       background-color: transparent;
     }
 
+    // distancia entre as categorias
     li {
       margin-bottom: 15px;
-      
+
       & > p {
         font-weight: 700;
         color: rgb(33, 33, 33);
       }
     }
 
+    // todos os elementos de cada categoria
     .menu {
-      margin-bottom: 20px;
-      padding-left: 20px;
       margin-top: 25px;
 
-      li {
-        margin-bottom: 25px;
-        position: relative;
-        display: flex;
-
-        transition: 0.3s;
-
-        a {
-          text-decoration: none;
-          color: rgba(51, 51, 51, 0.556);
-
-          &:hover {
-            color: rgb(17, 17, 17);
-          }
-        }
-
-        &:first-of-type {
-          margin-top: 10px;
-        }
+      a {
+        text-decoration: none;
+        color: rgba(51, 51, 51, 0.556);
+        font-size: 14px;
 
         &:hover {
-            transition: 0.3s;
+          color: rgb(17, 17, 17);
+          transition: 0.2s;
+        }
+
+        li {
+          // distancia entre os items dos elemntos da categoria
+          margin-bottom: 20px;
+          background-color: rgb(238, 238, 238);
+          border-radius: 30px;
+          padding: 5px 20px;
+          position: relative;
+
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+
           .icoItemMenu {
-            color: rgb(17, 17, 17);
+            width: 20px;
+            height: 20px;
+            // distancia até o nome do elemento da categoria
+            margin-right: 10px;
           }
         }
 
@@ -95,30 +98,6 @@
 
           margin-right: 10px;
           color: rgb(163, 163, 163);
-        }
-
-        &:first-of-type:before,
-        &:last-of-type:before,
-        &::before {
-          content: "";
-          position: absolute;
-
-          width: 2px;
-          height: 70px;
-
-          background-color: rgb(228, 228, 228);
-
-          bottom: 0;
-          left: -15px;
-        }
-
-        &:first-of-type:before {
-          height: 15px;
-          bottom: 0;
-        }
-
-        &:last-of-type:before {
-          bottom: 5px;
         }
       }
     }
@@ -140,9 +119,16 @@
         width: 0px;
       }
 
-      & > li {
+      & li > a {
         width: 100%;
         height: fit-content;
+
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
 
         & > p {
           color: transparent;
@@ -178,8 +164,13 @@
 
         margin-bottom: 10px;
         margin-top: 10px;
-        
-        & > li {
+
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+
+        a > li {
           background-color: #ddd;
           width: 50px;
           height: 50px;
@@ -192,17 +183,16 @@
 
           cursor: pointer;
 
-          &:hover{
+          &:hover {
             background-color: rgb(29, 29, 29);
-          &:hover > a{
-            color: #000;
-          }
+            &:hover > a {
+              color: #000;
+            }
 
-            & > .icoItemMenu{
-                color: #fff;
+            & > .icoItemMenu {
+              color: #fff;
             }
           }
-
 
           &:first-of-type:before,
           &:last-of-type:before,

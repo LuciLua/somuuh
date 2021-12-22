@@ -29,10 +29,11 @@
     &::-webkit-scrollbar-thumb {
       height: 5px;
       border-radius: 30px;
-      background-color: rgba(28, 28, 28, 0.508);
+      background-color: rgba(28, 28, 28, 0.233);
+
     }
     &::-webkit-scrollbar-button {
-      height: 5px;
+      width: 0;
       border-radius: 30px;
       background-color: transparent;
     }
