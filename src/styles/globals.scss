@@ -31,6 +31,13 @@ main{
   width: 250px;
 }
 
+.barleft{
+  z-index: 10;
+}
+
+.centerAndRightBar{
+  z-index: 1;
+}
 
   .containerCenter {
     height: calc(100vh - 120px);

@@ -5,6 +5,9 @@ import Image from 'next/image'
 const SocialBar = () => {
     return (
         <div className={classNames(styles.friends, styles.boxWhite)}>
+            <div className={styles.pushbtn}>
+
+            </div>
                         <div className={styles.friend}>
                             <label>Nome</label>
                             <div className={styles.imgFriend}>
