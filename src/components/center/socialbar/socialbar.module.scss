@@ -23,17 +23,6 @@
   overflow-y: hidden;
   overflow-x: scroll;
 
-  .pushbtn {
-    position: absolute;
-    width: 40px;
-    height: 41px;
-    background-color: rgb(237, 237, 237);
-    left: -29px;
-    margin-top: -2px;
-    border-radius: 60%;
-
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.076) inset;
-  }
 
   &::-webkit-scrollbar {
     height: 5px;

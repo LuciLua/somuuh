@@ -4,17 +4,10 @@ import classNames from 'classnames'
 import Link from 'next/link'
 
 function Sidebar() {
-    function openCloseMenuLeft(){
-        const containerSideBar = document.querySelector('.containerSidebar')
-        containerSideBar.classList.toggle('open')
-        console.log(containerSideBar)
-    }
     return (
         <>
             <div className={classNames(styles.containerSidebar, 'containerSidebar')}>
-                <div className={styles.pushbtn} onClick={openCloseMenuLeft}>
-                </div>
-                <ul className={classNames(styles.menus, styles.boxWhite)}>
+                <ul className={classNames(styles.menus, styles.boxWhite, 'menus')}>
                     <div className={styles.logo}>
                         <span>Social Music</span>
                     </div>

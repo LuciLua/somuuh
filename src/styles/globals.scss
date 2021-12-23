@@ -3,113 +3,178 @@
 // @tailwind components;
 // @tailwind utilities;
 
-
-*::before, *, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::before,
+*,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.wrap{
-    background-color: rgb(237, 237, 237);
-}
+.wrap {
+  background-color: rgb(237, 237, 237);
 
-main{
+  main {
     display: flex;
     flex-direction: row;
-}
 
+    .bars {
+      width: 250px;
+    }
 
-.centerAndRightBar{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition: 0.3s;
-}
-
-.bars {
-  width: 250px;
-}
-
-.barleft{
-  z-index: 10;
-}
-
-.centerAndRightBar{
-  z-index: 1;
-}
-
-  .containerCenter {
-    height: calc(100vh - 120px);
-    padding: 5px;
-  
-    width: 100%;
-  
-    display: flex;
-    flex-direction: row;
-  
-    align-items: center;
-    justify-content: center;
-  
-    .social {
-      width: 100%;
-      max-width: 750px;
-  
-      height: 100%;
-  
-      display: flex;
-      flex-direction: column;
-  
+    .barleft {
+      z-index: 10;
       position: relative;
-  
-      
-    }
-  }
-  
-  @media only screen and (max-width: 1265px) { 
 
-    .centerAndRightBar{
       transition: 0.3s;
+
+      .pushbtnmenu {
+        // display: none;
+        opacity: 30%;
+        display: flex;
+
+
+        font-family: "Lexend";
+        font-weight: 100;
+        color: rgb(130, 130, 130);
+
+        width: 35px;
+        height: 35px;
+
+        background-color: rgb(248, 248, 248);
+
+        border-radius: 60%;
+        position: absolute;
+        top: 29.4px;
+        right: -12px;
+
+        z-index: 10;
+
+        justify-content: center;
+        align-items: center;
+
+        box-shadow: 3px 0 2px rgba(0, 0, 0, 0.028);
+
+        cursor: pointer;
+
+        &:hover {
+          color: rgb(49, 49, 49);
+        }
+
+        &::before {
+          content: "menu";
+          color: rgb(22, 6, 250);
+          position: absolute;
+          margin-top: -1px;
+          margin-left: 20px;
+          font-size: 8px;
+
+          transform: rotateZ(90deg);
+        }
+      }
     }
-    
-    .bars{
+
+    .centerAndRightBar {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+
       transition: 0.3s;
-    }
 
-    main{
-      transition: 1s;
-    }
-    .barRight{
-        display: none;
+      .containerCenter {
+        height: calc(100vh - 120px);
+        padding: 5px;
 
-    }
-    .containerCenter {
-      .social {
-        width: calc(100vw - 80px);
-  
-        .friends{
-          &::-webkit-scrollbar {
-            height: 0px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+
+        .social {
+          width: 100%;
+          max-width: 750px;
+
+          height: 100%;
+
+          display: flex;
+          flex-direction: column;
+
+          position: relative;
+
+          .pushbtn {
+            display: none;
           }
         }
       }
     }
-    
   }
+}
 
-  @media only screen and (max-width: 1100px) {
-    .barRight{
-      display: none;
-    }
-    .containerCenter {
-      .social {
-        width: calc(
-          100vw - 90px
-        ); // 90px (leftsidebar|80px + paddings left|5px and right|5px)
+@media only screen and (max-width: 1100px) {
+  main {
+    .centerAndRightBar {
+      .barRight {
+        display: none;
+      }
+      .containerCenter {
+        max-width: calc(100vw - 90px); // 90px (leftsidebar|80px + paddings left|5px and right|5px)
+        .social {
+          .pushbtn {
+            display: flex;
+          }
+        }
       }
     }
-      .bars {
-        width: 80px;
-        transition: 0.2s;
+    .barleft {
+      width: 80px;
+      transition: 0.2s;
+      .pushbtnmenu {
+        display: flex;
+        opacity: 100%;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1265px) {
+  main {
+    transition: 1s;
+
+    .barleft{
+      .pushbtnmenu{
+        border: 2px solid forestgreen;
+        opacity: 100%;
+        display: flex;
+        background-color: red;
+        width: 60px;
+      }
+    }
+
+    .bars {
+      transition: 0.3s;
+    }
+    .centerAndRightBar {
+      transition: 0.3s;
+      .barRight {
+        display: none;
+      }
+      .containerCenter {
+        width: calc(100vw - 80px);
+        .social {
+          width: calc(100vw - 80px);
+
+          &::-webkit-scrollbar {
+            height: 0px;
+          }
+          .pushbtn {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
