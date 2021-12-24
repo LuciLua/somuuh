@@ -8,13 +8,17 @@ import SocialBar from "../components/center/socialbar";
 function App({ Component, pageProps }) {
   function openCloseMenuLeft() {
     const menus = document.querySelector('.menus')
+
     const container = document.querySelector('.containerSidebar')
+
     menus.classList.toggle('open')
     container.classList.toggle('open')
 
     const barleft = document.querySelector('.barleft')
     const barcenter = document.querySelector('.containerCenter')
     
+    const centerAndRightBar = document.querySelector('.centerAndRightBar')
+
     const barright = document.querySelector('.barRight')
 
     // fechado
@@ -30,17 +34,38 @@ function App({ Component, pageProps }) {
 
       barcenter.style.width = '100vw'
       barcenter.style.minWidth = '100vw'
-
+      
+      barcenter.style.padding = '5px'
     }
     // aberto
     else {
       menus.style.display = 'flex'
-      menus.style.width = '100%'
-      barleft.style.width = '250px'
-      
-      barcenter.style.width = 'calc(100vw - 90px)'
-      barcenter.style.minWidth = 'calc(100vw - 90px)'
+      menus.style.width = '90px'
 
+
+      menus.style.marginLeft = 'auto'
+
+      barleft.style.width= '250px'
+      container.style.width= '250px'
+
+      barleft.style.padding= '0'
+      barleft.style.margin= '0'
+
+      // container.style.padding= '0'
+      container.style.margin= '0'
+      // container.style.background = '#93d'
+
+      barcenter.style.minWidth = 'calc(100vw - 90px)'
+      barcenter.style.width = 'calc(100vw - 90px)'
+      
+      barcenter.style.marginLeft = 'auto'
+      barcenter.style.paddingLeft = '10px'
+
+      // container.style.width= '100px'
+
+      // barleft.style.background = '#000'
+
+      centerAndRightBar.style.width = 'fit-content'
     }
 
   }
@@ -60,7 +85,7 @@ function App({ Component, pageProps }) {
           <div className={"containerCenter"}>
             <div className={"social"}>
               {/* Top bar */}
-              <div className={'pushbtn'}></div>
+              <div className={"pushbtn"}></div>
               <SocialBar />
               {/* Posts..404..etc mutable pages */}
               <Component {...pageProps} />

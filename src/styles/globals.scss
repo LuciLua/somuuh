@@ -31,10 +31,58 @@
 
       width: 250px;
 
-      .pushbtnmenu {
-        display: none;
-        opacity: 30%;
+    
+    }
+
+    .centerAndRightBar {
+      display: flex;
+
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+
+      justify-content: center;
+      align-items: center;
+
+      .barRight{
+        width: 250px;
+      }
+
+      .containerCenter {
+        height: calc(100vh - 120px);
+        padding: 5px 0 5px 5px; // right not padding
+
+        width: 100%;
+
         display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .social {
+          width: 100%;
+          max-width: 750px;
+
+          height: 100%;
+
+          display: flex;
+          flex-direction: column;
+
+          position: relative;
+
+          .pushbtn {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1015px) {
+  main {
+    .barleft{
+      transition: 0.2s;
+      .pushbtnmenu {
 
         font-family: "Lexend";
         font-weight: 100;
@@ -49,7 +97,7 @@
 
         border-radius: 60%;
         top: 29.4px;
-        right: -12px;
+        right: -15px;
 
         z-index: 10;
 
@@ -76,53 +124,6 @@
         }
       }
     }
-
-    .centerAndRightBar {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-
-      .barRight{
-        width: 250px;
-      }
-
-      .containerCenter {
-        height: calc(100vh - 120px);
-        padding: 5px 0 5px 0;
-
-        width: 100%;
-
-        display: flex;
-        flex-direction: row;
-
-        align-items: center;
-        justify-content: center;
-
-        .social {
-          width: 100%;
-          max-width: 750px;
-
-          height: 100%;
-
-          display: flex;
-          flex-direction: column;
-
-          position: relative;
-
-          .pushbtn {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1050px) {
-  main {
-    .bars{
-    }
     .centerAndRightBar {
       .barRight {
         display: none;
@@ -130,17 +131,11 @@
       .containerCenter {
         max-width: calc(100vw - 90px); // 90px (leftsidebar|80px + paddings left|5px and right|5px)
         .social {
-          .pushbtn {
+          .pushbtn{
+            background-color: red;
             display: flex;
           }
         }
-      }
-    }
-    .barleft {
-      transition: 0.2s;
-      .pushbtnmenu {
-        display: flex;
-        opacity: 100%;
       }
     }
   }
@@ -155,11 +150,9 @@
       transition: 0.3s;
 
       .pushbtnmenu{
-        border: 2px solid forestgreen;
-        opacity: 100%;
+        background-color: darkblue;
         display: flex;
-        background-color: red;
-        width: 60px;
+
       }
     }
     .bars {
@@ -179,7 +172,9 @@
             height: 0px;
           }
           .pushbtn {
-            display: flex;
+            background-color: darkblue;
+        display: flex;
+
           }
         }
       }
