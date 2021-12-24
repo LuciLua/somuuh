@@ -17,22 +17,24 @@
   main {
     display: flex;
     flex-direction: row;
+    position: relative;
 
+    // left and right bars
     .bars {
-      width: 250px;
+      transition: 0.3s;
+      position: relative;
     }
 
     .barleft {
       z-index: 10;
       position: relative;
 
-      transition: 0.3s;
+      width: 250px;
 
       .pushbtnmenu {
-        // display: none;
+        display: none;
         opacity: 30%;
         display: flex;
-
 
         font-family: "Lexend";
         font-weight: 100;
@@ -43,8 +45,9 @@
 
         background-color: rgb(248, 248, 248);
 
-        border-radius: 60%;
         position: absolute;
+
+        border-radius: 60%;
         top: 29.4px;
         right: -12px;
 
@@ -80,11 +83,13 @@
       height: 100%;
       z-index: 1;
 
-      transition: 0.3s;
+      .barRight{
+        width: 250px;
+      }
 
       .containerCenter {
         height: calc(100vh - 120px);
-        padding: 5px;
+        padding: 5px 0 5px 0;
 
         width: 100%;
 
@@ -114,8 +119,10 @@
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1050px) {
   main {
+    .bars{
+    }
     .centerAndRightBar {
       .barRight {
         display: none;
@@ -130,7 +137,6 @@
       }
     }
     .barleft {
-      width: 80px;
       transition: 0.2s;
       .pushbtnmenu {
         display: flex;
@@ -145,6 +151,9 @@
     transition: 1s;
 
     .barleft{
+      width: 80px;
+      transition: 0.3s;
+
       .pushbtnmenu{
         border: 2px solid forestgreen;
         opacity: 100%;
@@ -153,7 +162,6 @@
         width: 60px;
       }
     }
-
     .bars {
       transition: 0.3s;
     }

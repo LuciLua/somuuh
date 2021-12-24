@@ -13,23 +13,36 @@ function App({ Component, pageProps }) {
     container.classList.toggle('open')
 
     const barleft = document.querySelector('.barleft')
-    const barcenter = document.querySelector('.social')
+    const barcenter = document.querySelector('.containerCenter')
+    
+    const barright = document.querySelector('.barRight')
 
-    // aberto
+    // fechado
     if (menus.classList.contains('open')) {
-      menus.style.width = '0px'
-      menus.style.display = 'none'
+      // encolhe visualmente menus
+      menus.style.width = '0'
+      // encolhe estrutura de menus da barra esquerda
       barleft.style.width = '0'
-      barcenter.style.width = '100%'
+      setTimeout(()=> {
+        // esconde menu para evitar bug quanto a width
+        menus.style.display = 'none'
+      }, 250)
+
+      barcenter.style.width = '100vw'
+      barcenter.style.minWidth = '100vw'
 
     }
+    // aberto
     else {
-      // fechado
       menus.style.display = 'flex'
       menus.style.width = '100%'
       barleft.style.width = '250px'
+      
       barcenter.style.width = 'calc(100vw - 90px)'
+      barcenter.style.minWidth = 'calc(100vw - 90px)'
+
     }
+
   }
 
   return (

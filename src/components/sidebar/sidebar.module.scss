@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend&family=Roboto:wght@300;400;500&display=swap");
 
-
 .containerSidebar {
   width: 100%;
-  max-width: 100%;
-  min-width: 100%;
+  min-width: 270px;
+  max-width: 250px;
 
   height: calc(100vh - 120px); /*120px of bottombar*/
   position: relative;
@@ -133,17 +132,18 @@
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1050px) {
   .containerSidebar {
-    max-width: 80px;
-    min-width: 80px;
-    width: 80px;
-    padding: 5px 0 5px 5px; // all, except at right
+    max-width: 90px;
+    min-width: 90px;
+    width: 90px;
+
+    padding: 5px;
 
     .menus {
       padding: 5px;
-      
-
+      width: 80px;
+    
       &::-webkit-scrollbar {
         width: 0;
       }
