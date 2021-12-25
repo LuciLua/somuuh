@@ -35,7 +35,8 @@
     background-color: rgba(28, 28, 28, 0.233);
   }
   &::-webkit-scrollbar-button {
-    width: 0;
+    width: 1px;
+    display: none;
     border-radius: 30px;
     background-color: transparent;
   }

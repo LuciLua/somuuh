@@ -44,9 +44,11 @@
       background-color: rgba(28, 28, 28, 0.233);
     }
     &::-webkit-scrollbar-button {
-      height: 0;
+      height: 2px;
       border-radius: 30px;
       background-color: transparent;
+
+      display: none;
     }
 
     .logo {
