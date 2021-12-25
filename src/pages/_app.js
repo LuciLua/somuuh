@@ -4,6 +4,7 @@ import Bottombar from "../components/bottombar";
 
 import "../styles/globals.scss";
 import SocialBar from "../components/center/socialbar";
+import Head from "next/head";
 
 function App({ Component, pageProps }) {
   function openCloseMenuLeft() {
@@ -41,7 +42,6 @@ function App({ Component, pageProps }) {
 
       barcenter.style.marginLeft = '0'
 
-
       containerSideBar.style.width = '0'
     }
     // aberto
@@ -57,7 +57,7 @@ function App({ Component, pageProps }) {
       barcenter.style.minWidth = 'calc(100vw - 95px)'
       barcenter.style.maxWidth = 'calc(100vw - 95px)'
       barcenter.style.width = 'calc(100vw - 95px)'
-      
+
       barcenter.style.marginLeft = 'auto'
 
       containerSideBar.style.width = '80px'
@@ -66,37 +66,42 @@ function App({ Component, pageProps }) {
   }
 
   return (
-    <div className="wrap">
-      {/* Top, left and Right bar */}
-      <main>
-        {/* Left bar */}
-        <div className="bars barleft">
-          <div className="pushbtnmenu" onClick={openCloseMenuLeft}></div>
-          <Sidebar />
-        </div>
-        {/* Center and Right bar */}
-        <div className="centerAndRightBar">
-          {/* Center */}
-          <div className={"containerCenter"}>
-            <div className={"social"}>
-              {/* Top bar */}
-              <div className={"pushbtn"}></div>
-              <SocialBar />
-              {/* Posts..404..etc mutable pages */}
-              <Component {...pageProps} />
+    <>
+      <Head>
+        <title>Social Music</title>
+      </Head>
+      <div className="wrap">
+        {/* Top, left and Right bar */}
+        <main>
+          {/* Left bar */}
+          <div className="bars barleft">
+            <div className="pushbtnmenu" onClick={openCloseMenuLeft}></div>
+            <Sidebar />
+          </div>
+          {/* Center and Right bar */}
+          <div className="centerAndRightBar">
+            {/* Center */}
+            <div className={"containerCenter"}>
+              <div className={"social"}>
+                {/* Top bar */}
+                <div className={"pushbtn"}></div>
+                <SocialBar />
+                {/* Posts..404..etc mutable pages */}
+                <Component {...pageProps} />
+              </div>
+            </div>
+            {/* Right bar */}
+            <div className="bars barRight">
+              <SideRightbar />
             </div>
           </div>
-          {/* Right bar */}
-          <div className="bars barRight">
-            <SideRightbar />
-          </div>
-        </div>
-      </main>
-      {/* Bottom bar */}
-      <aside>
-        <Bottombar />
-      </aside>
-    </div>
+        </main>
+        {/* Bottom bar */}
+        <aside>
+          <Bottombar />
+        </aside>
+      </div>
+    </>
 
   );
 }
