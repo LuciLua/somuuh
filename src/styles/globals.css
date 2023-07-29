@@ -1,0 +1,28 @@
+*::before,
+*,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+  width: 2px;
+  height: 2px;
+  background-color: rgb(35, 35, 35);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: rgb(59, 59, 59);
+}
+
+*::-webkit-scrollbar-button{
+  height: 5px;
+  width: 5px;
+  background-color: rgb(21, 21, 21);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
