@@ -21,7 +21,7 @@ export default function root_layout({ children }) {
             <body className={`bg-zinc-300 text-zinc-50 flex flex-col h-screen w-full ${inter.className} relative w-screen overflow-hidden`}>
                 <div className="w-full h-full flex justify-between">
                     {/* perfil */}
-                    <nav className=" bg-zinc-950 w-[256px] min-w-[256px] overflow-y-scroll overflow-x-hidden h-[calc(100dvh-80px)]">
+                    <nav className=" bg-zinc-950 w-[256px] min-w-[200px] overflow-y-scroll overflow-x-hidden h-[calc(100dvh-80px)]">
                         {/* profile */}
                         <div className="flex gap-4 items-center px-5 pt-5">
                             <div className="w-10 h-10 overflow-hidden flex rounded-full">
@@ -69,7 +69,7 @@ export default function root_layout({ children }) {
                         {children}
                     </div>
                     {/* mais tocadas */}
-                    <nav className=" bg-zinc-950 w-[256px] min-w-[256px] overflow-y-scroll overflow-x-hidden h-[calc(100dvh-80px)] relative">
+                    <nav className=" bg-zinc-950 w-[256px] min-w-[200px] overflow-y-scroll overflow-x-hidden h-[calc(100dvh-80px)] relative">
                         <div className="text-sm w-full h-fit flex justify-center items-center flex-col">
                             <div className="w-full  h-full bg-zinc-950 overflow-hidden relative flex justify-center items-start flex-col p-3 border-b-zinc-800 border-b-[1px]">
                                 <h1>Central Cee x Dave - Sprinter [Music Video]</h1>
