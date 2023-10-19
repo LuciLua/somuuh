@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+:root{
+  --menuLeftWidth: 256px;
+  --menuRightWidth: 256px;
+}
+
 *::-webkit-scrollbar{
   width: 2px;
   height: 2px;

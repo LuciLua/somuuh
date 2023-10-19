@@ -1,6 +1,5 @@
 import SearchBox from "./UserMenuItems/SearchBox";
 import Profile from "./UserMenuItems/Profile";
-import { GroupsList } from "../GroupsPlaylistsUserMenu/GroupsAndPlaylistsUserMenu";
 
 function UserMenu() {
     return (

@@ -2,7 +2,7 @@ import { BiPlayCircle } from "react-icons/bi"
 
 function Player() {
     return (
-        <footer className="h-[80px] bg-zinc-800 flex justify-center items-center p-10 gap-3 z-20 bottom-0 absolute w-full shadow-[0_10px_32px_1px_rgba(0,0,0,0.4)]">
+        <footer className="h-[80px] bg-zinc-800 flex justify-center items-center p-10 gap-3 z-20 bottom-0 absolute w-full shadow-[0_10px_32px_1px_rgba(0,0,0,0.4)] min-h-[80px]">
             <div className="w-fit h-fit flex justify-center items-center">
                 <BiPlayCircle className="text-zinc-500 text-[40px]" />
             </div>
