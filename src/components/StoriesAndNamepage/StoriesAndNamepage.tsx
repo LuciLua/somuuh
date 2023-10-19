@@ -1,7 +1,20 @@
+'use client'
+
+import { useEffect, useState } from "react"
+
 function Namepage() {
+
+    const [pathLabel, setPathLabel] = useState<any>(null)
+
+    useEffect(() => {
+        if (typeof window !== undefined) {
+            setPathLabel(window?.location?.pathname)
+        }
+    })
+
     return (
         <div className="bg-zinc-800 py-4 px-6 w-full">
-            <h1 className="text-zinc-500">Social Music <span className="text-zinc-600 text-[14px]"> / eventos dos amigos</span></h1>
+            <h1 className="text-zinc-500">Social Music <span className="text-zinc-600 text-[14px]"> {pathLabel}</span></h1>
         </div>
     )
 }

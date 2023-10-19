@@ -5,8 +5,8 @@ import { Namepage, Stories } from "../../components/StoriesAndNamepage/StoriesAn
 export default function layout_other_pages({ children }: { children: ReactNode }) {
     return (
         <>
-            <div className="relative z-50 w-full">
-                <div className="lg:hidden flex fixed top-0 w-full ">
+            <div className="relative z-60 w-full">
+                <div className="lg:hidden flex fixed top-0 w-full z-[50] ">
                     <UserMenu />
                 </div>
                 <div className="absolute w-full lg:relative pt-[50px] lg:pt-0">
