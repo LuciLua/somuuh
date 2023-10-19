@@ -7,17 +7,19 @@ export const metadata: Metadata = { title: "Social Music | Home", creator: "Luci
 
 export default function homepage() {
     return (
-        <div className="flex flex-col relative h-[calc(100dvh-80px)] overflow-hidden max-h-[100dvh] top-0  w-full border-[2px] border-[#ff0]">
+        <div className="flex flex-col relative h-[calc(100dvh-80px)] overflow-y-scroll lg:overflow-y-hidden top-0  w-full">
 
-            <div className="absolute lg:relative z-10 w-full">
-                <div className="lg:hidden flex">
+            <div className="relative z-10 w-full ">
+                <div className="lg:hidden flex fixed top-0 z-20 w-full ">
                     <UserMenu />
                 </div>
-                <Namepage />
-                <Stories />
+                <div className="absolute w-full lg:relative mt-[50px] lg:mt-0">
+                    <Namepage />
+                    <Stories />
+                </div>
             </div>
 
-            <div className="justify-center items-center flex flex-col bg-zinc-900 w-full gap-3  pt-3 h-full relative overflow-scroll">
+            <div className="justify-center items-center flex flex-col bg-zinc-900 w-full gap-3 relative lg:overflow-scroll lg:pt-0 pt-[200px] lg:min-h-fit h-fit">
                 <ContentsTest />
             </div>
         </div>
