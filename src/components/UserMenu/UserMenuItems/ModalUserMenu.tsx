@@ -7,6 +7,7 @@ function ModalUserMenu() {
 
     return (
         <div className="w-[150px] bg-zinc-900 shadow-xl text-white flex flex-col absolute top-[30px] rounded-[4px] z-[60]">
+            <Link href="/" className="hover:bg-zinc-950 px-[15px] py-[9px]">Home</Link>
 
             {user.username === "anonymous" ?
                 <div className="hover:bg-zinc-950 px-[15px] py-[9px]"
