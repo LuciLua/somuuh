@@ -25,7 +25,7 @@ export default function root_layout({ children }) {
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </head>
-            <body className={`bg-zinc-300 text-zinc-50 flex flex-col h-screen w-full ${inter.className} relative w-screen overflow-hidden`}>
+            <body className={`bg-zinc-300 text-zinc-50 flex flex-col h-screen  w-full ${inter.className} relative w-screen overflow-hidden`}>
                 <Providers>
                     {/* top of player */}
                     <div className="w-full h-full flex justify-between">

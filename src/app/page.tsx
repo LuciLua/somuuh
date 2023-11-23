@@ -10,7 +10,7 @@ export const metadata: Metadata = { title: "Home | Social Music" }
 export default function homepage() {
 
     return (
-        <div className="flex flex-col relative lg:h-[calc(100dvh-80px)] min-h-[calc(100dvh-80px)] h-[calc(100%-80px)] overflow-y-scroll lg:overflow-y-hidden top-0  w-full">
+        <div className="flex flex-col relative lg:h-[calc(100dvh-80px)] h-[calc(100dvh-80px)] min-h-[calc(100dvh-80px)] overflow-y-scroll lg:overflow-y-hidden top-0  w-full">
 
             <div className="relative z-10 w-full ">
                 <div className="lg:hidden flex fixed top-0 z-20 w-full ">

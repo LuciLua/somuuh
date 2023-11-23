@@ -6,7 +6,7 @@ function Post({ username, content, img, title, likesNum, commentsNum }) {
         <div className="flex flex-col w-full p-[10px] bg-zinc-800 h-fit border-b-[1px] border-zinc-700">
             <header className="flex mb-[10px]">
                 <div className="relative w-[45px] h-[45px] overflow-hidden rounded-full mr-[15px]">
-                    <Image alt="photo_user" src={img} objectFit="cover" fill />
+                    <Image alt="photo_user" src={img} fill />
                 </div>
                 <div className="leading-5">
                     <h1 className="text-[17px] text-zinc-500">{title}</h1>
