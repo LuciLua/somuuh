@@ -4,10 +4,17 @@ import Link from "next/link"
 import { MdKeyboardArrowDown, MdHomeFilled } from "react-icons/md"
 import { ModalUserMenu } from "./ModalUserMenu"
 import { useState } from "react"
+import useUser from "../../../hooks/useUser"
 
 function Profile() {
 
     const [modalUserMenuIsOpen, setModalUserMenuIsOpen] = useState(false)
+    const { user } = useUser()
+
+
+    console.log(user)
+    console.log('asdasd')
+    // console.log(user.username)
 
     function openModalUserMenu() {
         setModalUserMenuIsOpen(!modalUserMenuIsOpen)
@@ -19,7 +26,7 @@ function Profile() {
                 <img src="/a.jpg" alt="" className="object-cover w-full h-full" />
             </div>
             <div className="text-zinc-100 flex gap-1 relative">
-                <h1 className="text-sm font-bold ">Luci Lua</h1>
+                <h1 className="text-sm font-bold ">{user.username}</h1>
                 <div className="relative">
                     <MdKeyboardArrowDown onClick={openModalUserMenu} className=" cursor-pointer relative mt-[3px]" />
                     {modalUserMenuIsOpen && <ModalUserMenu />}
