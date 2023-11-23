@@ -1,3 +1,7 @@
+import { Metadata } from "next"
+
+export const metadata: Metadata = { title: "Grupos" }
+
 export default function groups({ params }) {
     return (
         <div className="bg-zinc-800  relative h-full z-20 flex flex-col ">

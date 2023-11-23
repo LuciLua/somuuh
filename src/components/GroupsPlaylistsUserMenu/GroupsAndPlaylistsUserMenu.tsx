@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import UserMenu from "../UserMenu/UserMenu"
 import GroupsMenuList from "./GroupsList/GroupsMenuList"
 import PlaylistsMenuList from "./PlaylistsList/PlaylistsMenuList"

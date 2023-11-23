@@ -1,4 +1,7 @@
+import { Metadata } from "next"
 import { AiOutlineGroup } from "react-icons/ai"
+
+export const metadata: Metadata = { title: "Playlists" }
 
 export default function playlists({ params }) {
     return (
