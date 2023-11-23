@@ -3,9 +3,17 @@ import { Inter } from "next/font/google"
 import MaisTocadasMenu from "../components/MaisTocadasMenu/MaisTocadasMenu"
 import Player from "../components/Player"
 import { GroupsAndPlaylistsUserMenu } from "../components/GroupsPlaylistsUserMenu/GroupsAndPlaylistsUserMenu"
-import { Metadata } from "next/dist/lib/metadata/types/metadata-interface"
+import { Metadata } from "next"
 
-export const metadata: Metadata = { title: "Social Music", creator: "LuciLua" }
+export const metadata: Metadata = { 
+    title: {
+        absolute: "",
+        default: "Social Music",
+        template: "%s | Social Music"
+
+    }, 
+    creator: "LuciLua"
+}
 const inter = Inter({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
 
 export default function root_layout({ children }) {
@@ -29,7 +37,6 @@ export default function root_layout({ children }) {
                     {/* right */}
                     <MaisTocadasMenu />
                 </div>
-
                 {/* bottom */}
                 <Player />
             </body>

@@ -3,7 +3,7 @@ import { Namepage, Stories } from "../components/StoriesAndNamepage/StoriesAndNa
 import ContentsTest from "../components/ContentsTest"
 import UserMenu from "../components/UserMenu/UserMenu"
 
-export const metadata: Metadata = { title: "Social Music | Home", creator: "LuciLua" }
+export const metadata: Metadata = { title: "Home | Social Music" }
 
 export default function homepage() {
     return (
