@@ -1,9 +1,9 @@
 import "./../styles/globals.css"
-import { Metadata } from "next"
 import { Inter } from "next/font/google"
 import MaisTocadasMenu from "../components/MaisTocadasMenu/MaisTocadasMenu"
 import Player from "../components/Player"
 import { GroupsAndPlaylistsUserMenu } from "../components/GroupsPlaylistsUserMenu/GroupsAndPlaylistsUserMenu"
+import { Metadata } from "next/dist/lib/metadata/types/metadata-interface"
 
 export const metadata: Metadata = { title: "Social Music", creator: "LuciLua" }
 const inter = Inter({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
