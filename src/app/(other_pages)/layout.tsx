@@ -17,7 +17,7 @@ export default function layout_other_pages({ children }: { children: ReactNode }
                 </div>
             </div>
             <div className="pt-[100px] lg:pt-0 overflow-y-scroll h-full">
-            {children}
+                {children}
             </div>
         </>
     )

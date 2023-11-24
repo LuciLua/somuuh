@@ -1,13 +1,18 @@
+'use client'
+
+import { SessionProvider } from "next-auth/react";
 import LoginModalContextProvider from "../../contexts/LoginModalContext";
 import UserContextProvider from "../../contexts/UserContext";
 
 function Providers({ children }) {
     return (
-        <LoginModalContextProvider>
-            <UserContextProvider>
-                {children}
-            </UserContextProvider>
-        </LoginModalContextProvider>
+        <SessionProvider>
+            <LoginModalContextProvider>
+                <UserContextProvider>
+                    {children}
+                </UserContextProvider>
+            </LoginModalContextProvider >
+        </SessionProvider>
     )
 }
 

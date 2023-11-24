@@ -1,11 +1,10 @@
 import { Metadata } from "next"
 import { Namepage, Stories } from "../components/StoriesAndNamepage/StoriesAndNamepage"
-import ContentsTest from "../components/ContentsTest"
 import UserMenu from "../components/UserMenu/UserMenu"
-import Image from "next/image"
+
+import WrapPosts from "../components/WrapPosts"
 import Post from "../components/Post/Post"
 import PostInput from "../components/PostInput/PostInput"
-import WrapPosts from "../components/WrapPosts"
 
 export const metadata: Metadata = { title: "Home | Somuuh" }
 
@@ -13,7 +12,6 @@ export default function homepage() {
 
     return (
         <div className="flex flex-col relative lg:h-[calc(100dvh-80px)] h-[calc(100dvh-80px)] min-h-[calc(100dvh-80px)] overflow-y-scroll lg:overflow-y-hidden top-0 w-full">
-
             <div className="relative z-10 w-full h-fit flex flex-col">
                 <div className="lg:hidden flex fixed top-0 z-20 w-full h-fit">
                     <UserMenu />
@@ -25,11 +23,7 @@ export default function homepage() {
                     <Stories />
                 </div>
             </div>
-
-
             <WrapPosts>
-
-                {/* <ContentsTest /> */}
                 <PostInput />
                 <div className="w-full bg-zinc-900 min-h-[250px] h-full flex flex-col border-t-[1px] border-zinc-700">
                     <Post
@@ -90,7 +84,6 @@ export default function homepage() {
                     />
                 </div>
             </WrapPosts>
-
         </div>
     )
 }

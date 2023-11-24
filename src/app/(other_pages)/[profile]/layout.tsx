@@ -1,7 +1,11 @@
-export default function profile({ children }) {
+import WrapSafeProviderAuth from "../../../components/WrapSafeProviderAuth/WrapSafeProviderAuth";
+
+export default async function profile({ children }) {
     return (
-        <div className="bg-slate-600 w-full h-full">
-            {children}
-        </div>
+        <WrapSafeProviderAuth>
+            <div className="bg-slate-600 w-full h-full">
+                {children}
+            </div>
+        </WrapSafeProviderAuth>
     )
 }

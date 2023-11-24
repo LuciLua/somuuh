@@ -1,15 +1,36 @@
 'use client'
 
-import { createContext, useState } from "react"
+import { createContext, useEffect, useState } from "react"
+import { useSession } from "next-auth/react"
+
 
 export const UserContext = createContext<any>({})
 
 export default function UserContextProvider({ children }) {
 
+    const { data: session, status } = useSession()
     const [user, setUser] = useState<any>({ username: "anonymous" })
 
-    function newUser(username: string) {
-        setUser((prev: any) => user.username = username)
+    useEffect(() => {
+        newUser()
+    }, [status, session])
+
+    function setUserAsSoonAsPossible() {
+        if (status === "unauthenticated") {
+            setUser({ username: "anonymous" })
+        }
+        if (status === "loading") {
+            setUser({ username: "loading..." })
+        }
+        if (status === "authenticated") {
+            setUser({ username: session?.user?.name, image: session?.user?.image })
+        }
+        return user
+    }
+
+    async function newUser() {
+        await setUserAsSoonAsPossible()
+        return user
     }
     function exitUser() {
         setUser((prev: any) => user.username = "anonymous")

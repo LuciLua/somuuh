@@ -1,9 +1,6 @@
-import { Metadata } from "next"
 import Link from "next/link"
 
-export const metadata: Metadata = { title: "Grupos" }
-
-export default function groups({ params }) {
+export default function groups() {
     return (
         <div className="bg-zinc-800  relative h-full z-20 flex flex-col ">
             <div className="p-[20px] flex flex-col ">
