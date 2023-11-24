@@ -3,15 +3,20 @@
 import useLoginModal from "../../hooks/useLoginModal"
 import useUser from "../../hooks/useUser"
 import { AiOutlineClose } from "react-icons/ai"
+import { useSession, signIn, signOut } from "next-auth/react"
+
 
 function LoginModal() {
 
-    const { user, newUser } = useUser()
+    // const { user, newUser } = useUser()
     const { toggleLoginModal, loginModalOpened } = useLoginModal()
 
-    function login() {
-        toggleLoginModal()
-        newUser({ username: "LuciLua" })
+    const { data: session } = useSession()
+
+    async function login() {
+        await signIn('google')
+        await toggleLoginModal()
+        // await newUser({ username: session?.user?.name })
     }
 
     return (
