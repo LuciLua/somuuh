@@ -9,13 +9,13 @@ function Namepage() {
 
     useEffect(() => {
         if (typeof window !== undefined) {
-            setPathLabel(window?.location?.pathname)
-        }
-    })
+            setPathLabel(window?.location?.pathname)            
+        } 
+    }, [pathLabel])
 
     return (
         <div className="bg-zinc-800 py-4 px-6 w-full">
-            <h1 className="text-zinc-500">Social Music <span className="text-zinc-600 text-[14px]"> {pathLabel}</span></h1>
+            <h1 className="text-zinc-500">Somuuh<span className="text-zinc-600 text-[14px]">{pathLabel === '/' ? "" : pathLabel}</span></h1>
         </div>
     )
 }
