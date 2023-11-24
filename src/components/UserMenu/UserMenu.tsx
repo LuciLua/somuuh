@@ -11,9 +11,11 @@ function UserMenu() {
     const { user } = useUser()
 
     return (
-        <nav className="lg:bg-zinc-950 bg-zinc-800 h-fit w-full py-2 lg:block z-[60]" >
+        <nav className="lg:bg-zinc-950 bg-zinc-800  w-full py-2 lg:block z-[60] relative flex flex-col h-fit  shadow-lg border-b-[1px] border-zinc-800" >
             {user.username === "anonymous" ?
-                <LoginBtns />
+                <div className="flex relative h-full w-full">
+                    <LoginBtns />
+                </div>
                 :
                 <div className="flex lg:block  relative">
                     <Profile />
