@@ -10,7 +10,7 @@ function LoginBtns() {
     const { loginModalOpened, toggleLoginModal } = useLoginModal()
 
     return (
-        <div className="flex items-center px-5 min-w-fit lg:w-full lg:pt-5 pt-0 flex-col w-full h-fit relative overflow-hidden">
+        <div className="flex items-center px-5 min-w-fit lg:w-full lg:pt-5 pt-0 flex-col w-full h-full relative">
             <Link href={'/'} className="w-full h-[30px] overflow-hidden flex relative justify-center items-center my-6">
                 <Image src={'/logos/logo2.png'} fill alt="logo" className="object-contain" />
             </Link>
