@@ -5,12 +5,13 @@ import Player from "../components/Player"
 import { GroupsAndPlaylistsUserMenu } from "../components/GroupsPlaylistsUserMenu/GroupsAndPlaylistsUserMenu"
 import { Metadata } from "next"
 import Providers from "../components/Providers/Providers"
+import LoginModal from "../components/LoginModal/LoginModal"
 
 export const metadata: Metadata = {
     title: {
         absolute: "",
-        default: "Social Music",
-        template: "%s | Social Music"
+        default: "Somuuh",
+        template: "%s | Somuuh"
 
     },
     creator: "LuciLua"
@@ -25,10 +26,11 @@ export default function root_layout({ children }) {
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </head>
-            <body className={`bg-zinc-300 text-zinc-50 flex flex-col h-[100dvh]  w-full ${inter.className} relative w-screen overflow-hidden`}>
+            <body className={`bg-zinc-950 text-zinc-50 flex flex-col h-[100dvh]  w-full ${inter.className} relative w-screen overflow-hidden`}>
                 <Providers>
+                    <LoginModal />
                     {/* top of player */}
-                    <div className="w-full h-full flex justify-between">
+                    <div className="w-full h-full flex justify-between max-w-[1920px] mx-auto">
                         {/* left */}
                         <GroupsAndPlaylistsUserMenu />
                         {/* middle */}

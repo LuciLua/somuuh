@@ -5,16 +5,12 @@ import { MdKeyboardArrowDown, MdHomeFilled } from "react-icons/md"
 import { ModalUserMenu } from "./ModalUserMenu"
 import { useState } from "react"
 import useUser from "../../../hooks/useUser"
+import Image from "next/image"
 
 function Profile() {
 
     const [modalUserMenuIsOpen, setModalUserMenuIsOpen] = useState(false)
     const { user } = useUser()
-
-
-    console.log(user)
-    console.log('asdasd')
-    // console.log(user.username)
 
     function openModalUserMenu() {
         setModalUserMenuIsOpen(!modalUserMenuIsOpen)
@@ -28,7 +24,7 @@ function Profile() {
             <div className="text-zinc-100 flex gap-1 relative">
                 <h1 className="text-sm font-bold ">{user.username}</h1>
                 <div className="relative">
-                    <MdKeyboardArrowDown onClick={openModalUserMenu} className=" cursor-pointer relative mt-[3px]" />
+                    <MdKeyboardArrowDown onClick={openModalUserMenu} className="cursor-pointer relative mt-[3px]" />
                     {modalUserMenuIsOpen && <ModalUserMenu />}
                 </div>
 
@@ -38,7 +34,7 @@ function Profile() {
                     <MdHomeFilled />
                 </Link>
             </div>
-        </div >
+        </div>
     )
 }
 

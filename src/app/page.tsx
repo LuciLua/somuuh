@@ -4,26 +4,30 @@ import ContentsTest from "../components/ContentsTest"
 import UserMenu from "../components/UserMenu/UserMenu"
 import Image from "next/image"
 import Post from "../components/Post/Post"
+import PostInput from "../components/PostInput/PostInput"
 
-export const metadata: Metadata = { title: "Home | Social Music" }
+export const metadata: Metadata = { title: "Home | Somuuh" }
 
 export default function homepage() {
 
     return (
         <div className="flex flex-col relative lg:h-[calc(100dvh-80px)] h-[calc(100dvh-80px)] min-h-[calc(100dvh-80px)] overflow-y-scroll lg:overflow-y-hidden top-0  w-full">
 
-            <div className="relative z-10 w-full ">
-                <div className="lg:hidden flex fixed top-0 z-20 w-full ">
+            <div className="relative z-10 w-full">
+                <div className="lg:hidden flex fixed top-0 z-20 w-full h-fit">
                     <UserMenu />
                 </div>
-                <Namepage />
+                <div className="mt-[60px] lg:mt-0 lg:border-t-0 border-y-[1px] border-zinc-700">
+                    <Namepage />
+                </div>
                 <div className="relative w-full lg:relative mt-[0px] lg:mt-0">
                     <Stories />
                 </div>
             </div>
 
-            <div className="justify-center items-center flex flex-col bg-zinc-900 w-full relative lg:overflow-scroll lg:pt-0 lg:min-h-fit h-fit pt-0">
+            <div className="justify-center items-center flex flex-col bg-zinc-900 w-full relative lg:overflow-scroll lg:pt-0 lg:min-h-fit h-fit">
                 {/* <ContentsTest /> */}
+                <PostInput />
                 <div className="w-full bg-zinc-900 min-h-[250px] h-full flex flex-col border-t-[1px] border-zinc-700">
                     <Post
                         img="/a.jpg" username="lucilua"

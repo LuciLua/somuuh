@@ -1,10 +1,13 @@
+import LoginModalContextProvider from "../../contexts/LoginModalContext";
 import UserContextProvider from "../../contexts/UserContext";
 
 function Providers({ children }) {
     return (
-        <UserContextProvider>
-            {children}
-        </UserContextProvider>
+        <LoginModalContextProvider>
+            <UserContextProvider>
+                {children}
+            </UserContextProvider>
+        </LoginModalContextProvider>
     )
 }
 
