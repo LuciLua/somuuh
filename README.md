@@ -60,6 +60,6 @@ yarn start
 
 ## 🖼 Preview
 
-**So far, this is the preview, but you can check it out at [this updated link](https://socialmusic.vercel.app/)**
+**So far, this is the preview.
 
 <img src="./print.png"/>
